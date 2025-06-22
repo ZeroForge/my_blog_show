@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ZeroForge</title><link>https://www.zeroforge.top/</link><description>Recent content on ZeroForge</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>ZeroForge</copyright><lastBuildDate>Wed, 04 Jun 2025 23:26:57 +0800</lastBuildDate><atom:link href="https://www.zeroforge.top/index.xml" rel="self" type="application/rss+xml"/><item><title>1、解决端口被占用问题</title><link>https://www.zeroforge.top/p/1%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/</link><pubDate>Wed, 04 Jun 2025 23:26:57 +0800</pubDate><guid>https://www.zeroforge.top/p/1%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/</guid><description>&lt;h1 id="解决-端口被占用问题">解决 端口被占用问题
+&lt;/h1>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">报错信息&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="n">Web&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">server&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">failed&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">start&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Port&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">7777&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">was&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">already&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">in&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">use&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">报错原因&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="n">端口被占用&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>解决方法一：修改端口;&lt;/p>
+&lt;p>解决方法二：关闭占用端口的进程。&lt;/p>
+&lt;p>我选择了第二种,接下来是解决方法的步骤:&lt;/p>
+&lt;p>1.使用cmd命令查看端口号占用情况，例如查看端口 7777，可以看出进程号为 18192；&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">netstat -ano | findstr 端口号
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://image.zeroforge.top/F6CJGm.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>2.关闭该进程&lt;/p>
+&lt;p>方法一：使用任务管理器关闭：&lt;/p>
+&lt;p>Ctrl+Shift+Esc 打开任务管理器，根据PID排序找到PID为10728的进程，选择后点击结束任务。&lt;/p>
+&lt;p>&lt;img src="https://image.zeroforge.top/tcLD14.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>方法二： 使用命令关闭&lt;/p>
+&lt;p>命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">taskkill -PID 进程号 -F
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://image.zeroforge.top/MvZIQC.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>归档</title><link>https://www.zeroforge.top/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://www.zeroforge.top/archives/</guid><description/></item><item><title>About</title><link>https://www.zeroforge.top/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://www.zeroforge.top/about/</guid><description>&lt;p>Written in Go, Hugo is an open source static site generator available under the &lt;a class="link" href="https://github.com/gohugoio/hugo/blob/master/LICENSE" target="_blank" rel="noopener"
+>Apache License 2.0.&lt;/a> Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p>
+&lt;p>Hugo makes use of a variety of open source projects including:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/yuin/goldmark" target="_blank" rel="noopener"
+>https://github.com/yuin/goldmark&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/alecthomas/chroma" target="_blank" rel="noopener"
+>https://github.com/alecthomas/chroma&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/muesli/smartcrop" target="_blank" rel="noopener"
+>https://github.com/muesli/smartcrop&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/spf13/cobra" target="_blank" rel="noopener"
+>https://github.com/spf13/cobra&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/spf13/viper" target="_blank" rel="noopener"
+>https://github.com/spf13/viper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p>
+&lt;p>Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p>
+&lt;p>Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p>
+&lt;p>Learn more and contribute on &lt;a class="link" href="https://github.com/gohugoio" target="_blank" rel="noopener"
+>GitHub&lt;/a>.&lt;/p></description></item><item><title>搜索</title><link>https://www.zeroforge.top/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.zeroforge.top/search/</guid><description/></item><item><title>友情链接</title><link>https://www.zeroforge.top/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.zeroforge.top/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid><description>&lt;p>友情链接&lt;/p></description></item></channel></rss>
