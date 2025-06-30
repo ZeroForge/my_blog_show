@@ -16,7 +16,7 @@
 然后在下面设置域名，并勾选Enforce HTTPS（这个是有加密的，更好些，这样之后自己的网站链接前面是https开头的，如果这里是灰状勾选不了，是因为设置时有问题导致的。）</p><p><img src=https://image.zeroforge.top/ctjsu2.png loading=lazy alt=image-20250630103716700></p><h2 id=5创建并维护-cname-文件>5、创建并维护 CNAME 文件</h2><p>Hugo 的 <code>static</code> 目录下的文件会直接复制到生成后的 <code>public</code> 目录中，因此：
 1、在 Hugo 项目根目录的 <code>static</code> 文件夹中创建 <code>CNAME</code> 文件（无后缀）。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;example.com&#34;</span> &gt; static/CNAME
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>echo</span> example.com &gt; static/CNAME
 </span></span><span class=line><span class=cl><span class=c1>#这是terminal上的代码</span>
 </span></span></code></pre></td></tr></table></div></div><p>2、文件内容为你的域名（如 <code>example.com</code> 或 <code>www.example.com</code>）。</p><h2 id=6最终效果>6、最终效果</h2><p>这样，以后在浏览器中键入你自己的域名就可以直接访问到页面了.</p></section><footer class=article-footer><section class=article-tags><a href=/tags/domain/>Domain</a>
 <a href=/tags/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/>域名绑定</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
