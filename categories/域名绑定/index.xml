@@ -35,5 +35,17 @@ alt="image-20250630103037477"
 loading="lazy"
 alt="image-20250630103716700"
 >&lt;/p>
-&lt;h2 id="最终效果">最终效果
+&lt;h2 id="5创建并维护-cname-文件">5、创建并维护 CNAME 文件
+&lt;/h2>&lt;p>Hugo 的 &lt;code>static&lt;/code> 目录下的文件会直接复制到生成后的 &lt;code>public&lt;/code> 目录中，因此：
+1、在 Hugo 项目根目录的 &lt;code>static&lt;/code> 文件夹中创建 &lt;code>CNAME&lt;/code> 文件（无后缀）。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;example.com&amp;#34;&lt;/span> &amp;gt; static/CNAME
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>2、文件内容为你的域名（如 &lt;code>example.com&lt;/code> 或 &lt;code>www.example.com&lt;/code>）。&lt;/p>
+&lt;h2 id="6最终效果">6、最终效果
 &lt;/h2>&lt;p>这样，以后在浏览器中键入你自己的域名就可以直接访问到页面了.&lt;/p></description></item></channel></rss>

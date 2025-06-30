@@ -1,1 +1,1 @@
-www.zeroforge.top
+echo "www.zeroforge.top" > static/CNAME
